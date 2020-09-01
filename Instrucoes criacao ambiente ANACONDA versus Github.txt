@@ -1,0 +1,205 @@
+git push http://otamilocintra:"Estudos@20"@github.com/otamilocintra/ml2gh.git --all
+
+
+git push http://otamilocintra:ocaestudos20@github.com/otamilocintra/ml2gh.git --all
+
+
+********************  *****************************************  ******************
+Instruções para criar AMBIENTE Anaconda x GitHub otamilocintra
+********************  *****************************************  ******************
+Local das instruções:
+https://malum.com.br/wp/2019/11/07/usando-anaconda-com-github/
+REVER OS ERROS
+********************  *****************************************  ******************
+
+
+(base) C:\Users\ORION>dir /p
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é FE88-EF33
+
+ Pasta de C:\Users\ORION
+
+31/08/2020  20:07    <DIR>          .
+31/08/2020  20:07    <DIR>          ..
+31/08/2020  00:32    <DIR>          .conda
+31/08/2020  14:50                43 .condarc
+28/08/2020  17:06               214 .gitconfig
+31/07/2020  22:54    <DIR>          .ipynb_checkpoints
+31/07/2020  22:49    <DIR>          .ipython
+31/07/2020  23:55    <DIR>          .jupyter
+27/08/2020  01:35    <DIR>          .matplotlib
+15/08/2020  19:46    <DIR>          .Synkron
+13/08/2020  00:37    <DIR>          3D Objects
+13/08/2020  00:37    <DIR>          Contacts
+31/08/2020  18:02    <DIR>          Desktop
+31/08/2020  00:50    <DIR>          Documents
+31/08/2020  12:10    <DIR>          Downloads
+13/08/2020  00:37    <DIR>          Favorites
+28/08/2020  21:30    <DIR>          Install_All
+13/08/2020  00:37    <DIR>          Links
+31/08/2020  12:16    <DIR>          miniconda3
+31/08/2020  20:28    <DIR>          ml2book
+29/08/2020  22:49    <DIR>          ML_3
+13/08/2020  00:37    <DIR>          Music
+31/08/2020  14:32    <DIR>          OneDrive
+13/08/2020  00:37    <DIR>          Pictures
+Pressione qualquer tecla para continuar. . .
+13/08/2020  00:37    <DIR>          Saved Games
+29/08/2020  21:28    <DIR>          scikit_learn_data
+13/08/2020  00:37    <DIR>          Searches
+11/07/2020  13:22                 0 Sti_Trace.log
+31/07/2020  22:53             9.537 TestePy1.ipynb
+13/08/2020  00:37    <DIR>          Videos
+               4 arquivo(s)          9.794 bytes
+              26 pasta(s)   421.230.215.168 bytes disponíveis
+
+(base) C:\Users\ORION>cd ml2book
+
+(base) C:\Users\ORION\ml2book>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é FE88-EF33
+
+ Pasta de C:\Users\ORION\ml2book
+
+31/08/2020  20:28    <DIR>          .
+31/08/2020  20:28    <DIR>          ..
+31/08/2020  20:27    <DIR>          .ipynb_checkpoints
+31/08/2020  20:28               817 TesteML2 v1.ipynb
+               1 arquivo(s)            817 bytes
+               3 pasta(s)   421.226.422.272 bytes disponíveis
+
+(base) C:\Users\ORION\ml2book>activate mlbook
+
+(mlbook) C:\Users\ORION\ml2book>conda install -c anaconda git
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 4.8.3
+  latest version: 4.8.4
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: C:\Users\ORION\.conda\envs\mlbook
+
+  added / updated specs:
+    - git
+
+
+The following packages will be downloaded:
+
+    package                    |            build
+    ---------------------------|-----------------
+    ca-certificates-2020.6.24  |                0         165 KB  anaconda
+    certifi-2020.6.20          |           py38_0         160 KB  anaconda
+    git-2.23.0                 |       h6bb4b03_0        18.1 MB  anaconda
+    openssl-1.1.1g             |       he774522_0         5.8 MB  anaconda
+    ------------------------------------------------------------
+                                           Total:        24.1 MB
+
+The following NEW packages will be INSTALLED:
+
+  git                anaconda/win-64::git-2.23.0-h6bb4b03_0
+
+The following packages will be SUPERSEDED by a higher-priority channel:
+
+  ca-certificates                                 pkgs/main --> anaconda
+  certifi                                         pkgs/main --> anaconda
+  openssl                                       conda-forge --> anaconda
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+certifi-2020.6.20    | 160 KB    | ############################################################################ | 100%
+ca-certificates-2020 | 165 KB    | ############################################################################ | 100%
+git-2.23.0           | 18.1 MB   | ############################################################################ | 100%
+openssl-1.1.1g       | 5.8 MB    | ############################################################################ | 100%
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+
+(mlbook) C:\Users\ORION\ml2book>echo "# mlbook" >> README.md
+
+(mlbook) C:\Users\ORION\ml2book>git init
+Initialized empty Git repository in C:/Users/ORION/ml2book/.git/
+
+(mlbook) C:\Users\ORION\ml2book>git config --global user.email "otamilo.araujo@gmail.com"
+
+(mlbook) C:\Users\ORION\ml2book>git config --global user.name "otamilocintra"
+
+(mlbook) C:\Users\ORION\ml2book>git add -all
+error: did you mean `--all` (with two dashes ?)
+
+(mlbook) C:\Users\ORION\ml2book>git add --all
+warning: LF will be replaced by CRLF in .ipynb_checkpoints/TesteML2 v1-checkpoint.ipynb.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in TesteML2 v1.ipynb.
+The file will have its original line endings in your working directory
+
+(mlbook) C:\Users\ORION\ml2book>get commit -m "Commit from otamilocintra.com.br"
+'get' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+(mlbook) C:\Users\ORION\ml2book>git commit -m "Commit from otamilocintra.com.br"
+[master (root-commit) faeced3] Commit from otamilocintra.com.br
+ 3 files changed, 99 insertions(+)
+ create mode 100644 .ipynb_checkpoints/TesteML2 v1-checkpoint.ipynb
+ create mode 100644 README.md
+ create mode 100644 TesteML2 v1.ipynb
+
+(mlbook) C:\Users\ORION\ml2book>git remote add origin https://github.com/otamilocintra/ml2gh.git
+
+(mlbook) C:\Users\ORION\ml2book>git pull origin master
+fatal: couldn't find remote ref master
+
+(mlbook) C:\Users\ORION\ml2book>git remote add origin https://github.com/otamilocintra/master.git
+fatal: remote origin already exists.
+
+(mlbook) C:\Users\ORION\ml2book>git pull origin master
+fatal: couldn't find remote ref master
+
+(mlbook) C:\Users\ORION\ml2book>git push http://otamilocintra:'Estudos@20'@github.com/otamilocintra/ml2gh.git --all
+fatal: unable to access 'http://20'@github.com/otamilocintra/ml2gh.git/': Could not resolve host: 20'@github.com
+
+(mlbook) C:\Users\ORION\ml2book>git push http://otamilocintra:'Estud
+fatal: unable to access 'http://otamilocintra:'Estud/': URL using bad/illegal format or missing URL
+
+(mlbook) C:\Users\ORION\ml2book>
+(mlbook) C:\Users\ORION\ml2book>git push http://otamilocintra:"Estudos@20"@github.com/otamilocintra/ml2gh.git --all
+fatal: unable to access 'http://20@github.com/otamilocintra/ml2gh.git/': Could not resolve host: 20@github.com
+
+(mlbook) C:\Users\ORION\ml2book>
+(mlbook) C:\Users\ORION\ml2book>git push http://otamilocintra:Estudos@20@github.com/otamilocintra/ml2gh.git --all
+fatal: unable to access 'http://20@github.com/otamilocintra/ml2gh.git/': Could not resolve host: 20@github.com
+
+(mlbook) C:\Users\ORION\ml2book>
+(mlbook) C:\Users\ORION\ml2book>git push http://otamilocintra:Estudos@20@github.com/otamilocintra/ml2gh.git --all
+fatal: unable to access 'http://20@github.com/otamilocintra/ml2gh.git/': Could not resolve host: 20@github.com
+
+(mlbook) C:\Users\ORION\ml2book>
+(mlbook) C:\Users\ORION\ml2book>git push http://otamilocintra:Estudos@20@github.com/otamilocintra/ml2gh.git --all
+fatal: unable to access 'http://20@github.com/otamilocintra/ml2gh.git/': Could not resolve host: 20@github.com
+
+(mlbook) C:\Users\ORION\ml2book>
+(mlbook) C:\Users\ORION\ml2book>git push http://otamilocintra:ocaestudos20@github.com/otamilocintra/ml2gh.git --all
+warning: redirecting to https://github.com/otamilocintra/ml2gh.git/
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 728 bytes | 145.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To http://github.com/otamilocintra/ml2gh.git
+ * [new branch]      master -> master
+
+(mlbook) C:\Users\ORION\ml2book>
+
